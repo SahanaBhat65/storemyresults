@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>Register here</title>
+<head>
+<style>
+body{
+background-image:url('images/pexels-pixabay-356043.jpg');
+background-repeat:no-repeat;
+background-size:cover;
+}
+.simple-form{
+text-align:center;
+margin:100px 0px;
+}
+img{
+    width: 5%;
+    height: 5%;
+}
+#registration{
+width:100%;
+background-color:rgb(20, 20, 20);
+opacity:0.8;
+padding: 50px 0px;
+}
+#button1{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#button2{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#button3{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#button4{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#button5{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#ph{
+outline:0px;
+width:100px;
+padding:10px;
+border-radius:5px;
+}
+#phone{
+outline:0px;
+width:150px;
+padding:10px;
+border-radius:5px;
+
+}
+
+#but{
+Color:white;
+font-size:18px;
+}
+#butt{
+width:250px;
+padding:10px;
+border-radius:5px;
+outline:0px;
+}
+#butt:hover
+{
+
+background:pink;
+color:black;
+transition:0.9s;
+}
+
+h1{
+Color:rgb(255, 255, 255);
+font-size:45px;
+
+font-style:Times New Roman;
+}
+p{
+padding:10px 5px;
+font-size:20px;
+
+background-color: none;
+Color:white;
+}
+
+
+</style>
+<script>
+    function fun()
+    {
+    var username=document.getElementById('button1').value;
+    var USN=document.getElementById('button2').value;
+    var pass=document.getElementById('button3').value;
+    var pass1=document.getElementById('button4').value;
+    
+    if(username=="")
+    {
+    alert("please fill all the  fields");
+    return false;
+    }
+    if(USN=="")
+    {
+    alert("please fill all the  fields");
+    return false;
+    }
+     if(pass.length<6 || pass.length>12)
+    {
+    alert("Password must be 6 to 12 characters");
+    return false;
+    }
+}
+    </script>
+</head>
+
+
+<body>
+    
+<div class="simple-form" >
+<form id="registration" action="r1.php" method="POST" onsubmit="return fun()"> 
+<img src="images/logo.png" class="im" >
+<h1>SIGN UP</h1>
+<p>username</p>
+<input type="text" name="username" id="button1" placeholder="enter your username"><br><br>
+<p>USN</p>
+<input type="text" name="USN" id="button2" placeholder="enter your USN"><br><br>
+<p>Password</p>
+<input type="password" name="pass" id="button4" placeholder="enter your password"><br><br>
+<!-- <p> Confirm Password</p>
+<input type="password" name="pass1" id="button5" placeholder="confirm your password"><br><br> -->
+<input type="submit" value="signup" id="butt" class="btn-login">
+ <!-- onclick="fun()"-->
+
+</form>
+</div>
+</body>
+</html>

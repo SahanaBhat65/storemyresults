@@ -1,0 +1,135 @@
+
+<html>
+<head>
+<title>StoreMyResult-Login</title>
+<style>
+body{
+margin:0;
+padding:0;
+background-image:url('intro.jpg');
+
+background-size:cover;
+background-position:cover;
+font-family:sans-serif;
+background-color:deepskyblue;
+background-image:url('images/pexels-abhilash-sahoo-4143556.jpg') ;
+}
+
+.loginbox{
+width:250px;
+height:300px;
+background:rgb(255, 255, 255);
+color:black;
+top:10%;
+left:40%;
+position:relative;
+transform:translate(-50%,-50%)
+box-sizing:border-box;
+padding: 70px 30px;
+}
+.lol{
+width:100px;
+height:100px;
+
+position:absolute;
+top:-25px;
+left:40%;
+
+
+
+}
+h1
+{
+margin:0;
+padding :0 0 20px;
+text-align:center;
+font-size:22px;
+} 
+.loginbox p{
+margin:0;
+padding:0;
+font-weight:bold;
+}
+.loginbox input{
+width:100%;
+margin-bottom:20px;
+}
+.loginbox input[type="text"],input[type="password"]
+{
+border:none;
+border-bottom: 1px solid #fff;
+background:transparent;
+outline:none;
+height:30px;
+font-size:16px;
+
+}
+
+.loginbox input[type="submit"]
+{
+border=none;
+outline:none;
+height:40px;
+background:#00aeff;
+color:#fff;
+font-size:18px;
+border-radius:20px;
+}
+a{
+text-decoration:none;}
+
+
+</style>
+<body>
+<div class="loginbox">
+<img src="images/logo.png"  class="lol">
+<h1>LOGIN</h1>
+<form  method="POST" action="l2.php" name="login1" >
+<p>USN</p>
+<input type="text" name="USN" placeholder="enter your USN" id="USN" required>
+<p>Password</p>
+<input type="password" name="password" placeholder="enter password" id="password" required>
+<input type="submit" name="btn" value="login" class="btn-login">
+<!-- 
+function validation()
+{
+var username=document.getElementById('username').value;
+var password=document.getElementById('password').value;
+
+if(username=="" || password=="")
+{
+alert("please fill all the  fields");
+return false;
+}
+if(password.length<6 || password.length>12)
+{
+alert("Password must be 6 to 12 characters");
+return;
+}
+var str=username.slice(0,1);
+if(username.slice(0,1)=="_" || username.slice(0,1)=="@" || str.match(/[0-9]/g)!=null)
+{
+alert("Username should not be start with _,@ and number");
+return;
+}
+else{
+alert("successfully logged in");
+location.href="new1.html";
+}
+} -->
+
+</script> 
+
+
+<!-- <a href="forgetpassword.html">Lost your password?</a><br> -->
+<a href="signinregister.html">Create New Account</a><br>
+
+</form>
+</div>
+
+</body>
+</head>
+</html>
+
+
+
